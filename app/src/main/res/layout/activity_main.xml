@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvDtgSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="DTG Size :"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_activity"
+        app:layout_constraintEnd_toStartOf="@+id/edt_DtgSize"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout3"
+        app:layout_constraintVertical_bias="0.328" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Android Location Test"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="376dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="226dp"
+        android:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/tvGpsLatitudeLabel"
+            android:text="GPS Lat "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvGpsLatitude"
+            android:text=""
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvGpsLongitudeLabel"
+            android:text="GPS Lon"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvGpsLongitude"
+            android:text=""
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvNetworkLatitudeLabel"
+            android:text="Network Lat"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvNetworkLatitude"
+            android:text=""
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvNetworkLongitudeLabel"
+            android:text="Network Lon "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvNetworkLongitude"
+            android:text=""
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvPassiveLatitudeLabel"
+            android:text="Passive Lat"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvPassiveLatitude"
+            android:text=""
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvPassivekLongitudeLabel"
+            android:text="Passive Lon"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvPassivekLongitude"
+            android:text=""
+            android:textSize="20dp" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/gridLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:columnCount="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout">
+
+        <TextView
+            android:id="@+id/tvGetSpeedLabel"
+            android:layout_gravity="right"
+            android:text="Get Speed "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvGetSpeed"
+            android:text=":"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tvCalSpeedLabel"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Cal Speed "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvCalSpeed"
+            android:text=":"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tvTimeLabel"
+            android:layout_gravity="right"
+            android:text="Time "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:text=":"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tvLastTimeLabel"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Last Time "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvLastTime"
+            android:text=":"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tvTimeDifLabel"
+            android:layout_gravity="right"
+            android:text="시간 간격 "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvTimeDif"
+            android:text=":"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tvDistDifLabel"
+            android:layout_gravity="right"
+            android:text="거리 간격 "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvDistDif"
+            android:text=":"
+            android:textSize="25dp" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btn_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="activity_click"
+        android:text="START"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout3"
+        app:layout_constraintVertical_bias="0.766" />
+
+    <EditText
+        android:id="@+id/edt_DtgSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="File Size KB"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btn_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.711"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout3"
+        app:layout_constraintVertical_bias="0.3" />
+
+
+</android.support.constraint.ConstraintLayout>
